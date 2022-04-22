@@ -103,11 +103,23 @@ body {
 
 .principal {
     padding: 24px 16px;
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina {
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.titulo-secao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.secao {
+    display: grid;
+    gap: 16px;
 }
 
 .cartao {
@@ -117,15 +129,15 @@ body {
     background-color: #2C343A;
 }
 
+.cartao--destaque {
+    margin-bottom: 16px;
+}
+
 .cartao-conteudo {
     padding: 16px;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 8px;
-}
-
-.cartao-destaque{
-    grid-column: span 2;
 }
 
 .cartao-titulo {
@@ -165,6 +177,7 @@ body {
     height: 40px;
     border-radius: 10px;
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao-botao-play::before {
@@ -179,4 +192,14 @@ body {
 
 .cartao-botao-destaque::before{
     margin-right: 8px;
+}
+
+
+.cartao-info-dinheiro::before {
+    content: "\e905";
+    font-size: 24px;
+}
+
+.cartao-botao-comprar::before {
+    content: "\e901";
 }
